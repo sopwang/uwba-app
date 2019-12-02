@@ -17,11 +17,13 @@ export class InterviewsComponent implements OnInit {
   public interviewees: AnswersModel[];
   public intervieweeId: string;
 
-  public joanna: AnswersModel; 
+  public joanna: AnswersModel;
   public vetaParco: AnswersModel;
+  public bryanChan: AnswersModel;
   public aliSaeed: AnswersModel;
   public joseMontoya: AnswersModel;
-  public bryanChan: AnswersModel;
+  public alexXie: AnswerModel;
+  public sabrinaMastelloto: AnswerModel;
 
   ngOnInit(): void {
     this.intervieweeId = this.route.snapshot.params.id;
@@ -154,8 +156,8 @@ export class InterviewsComponent implements OnInit {
       this.bryanChan = {
         name: "Bryan Chan",
         headerQuote: "Most of the things I wished I knew prior to backpacking could not be taught because it’s one of those things you just need to go through before you know. ",
-        headerPhoto: "bryanChan/header.jpg",
-        widePhoto: "bryanChan/wide1.jpg",
+        headerPhoto: "bryanChan/bryanChanHeader.jpg",
+        widePhoto: "bryanChan/longPhoto.jpg",
         favouriteDestination: "Of all the countries, I’ve traveled to – there is never 1 favourite destination as all places offer such different experiences and it is up to the individual to decide. Personally, " +
           "I love mountains and hiking / nature with a bit of countryside. That being said, my favourite country in Europe would have to be Switzerland because of the Swiss Alps. Not only is it breathtaking via the " +
           "Golden Train and its weather, the atmosphere is very peaceful, and you get to see what life is like in the mountains. ",
@@ -165,17 +167,68 @@ export class InterviewsComponent implements OnInit {
          "Zambia in the middle of nowhere. Not only that, you learn how to budget very well and not to be cheated on your next trip! Most of the things I wished I knew prior to backpacking could not be taught because it’s " +
          "one of those things you just need to go through before you know. ",
         tripExpectations: "To be fair, I had no idea what I was expecting. I just wanted to backpack because I was sick of Waterloo and needed a fresh mind and also, not having been to Europe then! In hindsight, I do not " +
-        "regret not expecting anything as I don’t have anything to compare it to which allowed me to treat every experience of its own and whether it’s good or bad, you learn from it! ",
+         "regret not expecting anything as I don’t have anything to compare it to which allowed me to treat every experience of its own and whether it’s good or bad, you learn from it! ",
         recommendations: "Too much to say! Looking back now, all I can really say is go with an open mind, and dive into it without being self-conscious! I still remember my first day of backpacking – I was in Malaga, Spain. " +
           "I felt incredibly self-conscious as the only Asian in a completely Caucasian environment and not speaking the language either, especially coming from an environment like Waterloo. I told myself to sleep it off (which " + 
           "I did) and the next day, I just continued my journey with a new mindset and that was to give no ****s! ",
-        img1: "bryanChan/normal.jpg",
-        img2: "bryanChan/long1.jpg",
-        img3: "bryanChan/wide1.jpg",
-        img4: "bryanChan/long2.jpg",
-        img5: "bryanChan/wide2.jpg",
-        img6: "bryanChan/patagonia.jpg",
+        img1: "bryanChan/filla.jpg",
+        img2: "bryanChan/img2.jpg",
+        img3: "bryanChan/download.jpg",
+        img4: "bryanChan/fill.jpg",
+        img5: "bryanChan/img1.jpg",
+        img6: "bryanChan/img3.jpg",
         firstQuote: "I wished I knew how tough yet rewarding backpacking can be. For example, having to learn Spanish on a whim when I backpacked through Patagonia was a new experience, or trying to signal a taxi down in Zambia in the middle of nowhere. ",
+      },
+      this.alexXie = {
+        name: "Alex Xie",
+        headerQuote: "Be comfortable with your plans and your style of travelling, because there's going to be complications and you want to deal with them in a good state of mind.",
+        headerPhoto: "alexXie/alexXieHeader.jpg",
+        widePhoto: "alexXie/longPhoto.jpg",
+        favouriteDestination: "Spain! It's the most vibrant country in Europe that I've been to, and I loved how different the food and culture was from my birth country (China) and Canada. I wish taking siestas was " +
+          "acceptable in Canada :D ",
+        nextCountry: "The next country on my list is definitely Iceland & Sweden (and probably the rest of the Scandinavian countries).",
+        knewPrior: "Sometimes, I would have had a better time visiting places that I knew I would enjoy, rather than trying to hit all the attractions I possibly could. This is something I learned a bit more as I made " +
+          "more trips, but especially at the beginning, I would be scared of missing out on crossing stuff off my (very long) list of must-sees and I wouldn't actually enjoy visiting places as much. ",
+        tripExpectations: "I expected to meet a lot of other people since I was staying in hostels, but I didn't expect so many other people to be backpacking solo! I was able to find a group of people to go watch soccer " +
+          "games, to go walk around the city with, and it was a really nice surprise. ",
+        recommendations: "Make sure you know what type of traveller you are! It's really hard to try to be a different person, especially in an unfamiliar and exciting environment. For me, I tried really hard to be an " +
+          "early-riser and ended up missing a flight because I booked one in the morning and thought I could wake up early. Be comfortable with your plans and your style of travelling, because there's going to be complications " +
+          "and you want to deal with them in a good state of mind c: ",
+        img1: "alexXie/filla.jpg",
+        img2: "alexXie/img2.jpg",
+        img3: "alexXie/download.jpg",
+        img4: "alexXie/fill.jpg",
+        img5: "alexXie/img1.jpg",
+        img6: "alexXie/img3.jpg",
+        firstQuote: "Sometimes, I would have had a better time visiting places that I knew I would enjoy, rather than trying to hit all the attractions I possibly could. ",
+      },
+      this.sabrinaMastelloto = {
+        name: "Sabrina Mastelloto",
+        headerQuote: "Usually when the unexpected happens it when you create the best memories! ",
+        headerPhoto: "sabrinaMastelloto/sabrinaMastellotoHeader.jpg",
+        widePhoto: "sabrinaMastelloto/longPhoto.jpg",
+        favouriteDestination: "Thailand because it is such a wonderful country. Thailand is one of the very few countries that were never a colony or invaded by another country at any point in history, which makes their " +
+          "history so rich and interesting. Their culture is also very different than mine. The food is amazing!! Pad Thai is so delicious!! Finally, it is the first country I have ever backpacked and when I visited it " +
+          "I was with 2 of my best friends. ",
+        nextCountry: "The next country on my list is Iceland! ",
+        knewPrior: "I wish I knew/realized that packing less is more. I was aware that whatever I pack in my backpack I will have to carry it for the duration of my trip. For my trip to Thailand, I did the rookie mistake of " +
+          "packing so many things that I never ended using during the trip, which they ended up annoying the whole trip because I had to carry them. ",
+        tripExpectations: "What I expect on my trip(s) is to meet many interesting people that has a love for traveling just like I do. I  love meeting people when I travel because you have a chance to share travel stories. " +
+          "Also, you make friends so easily, even if you are only with them for a couple of days. The friendship seem like it started many years ago, but really it started a couple hours/days ago. During my trip to Thailand, " +
+          "my friends and I meet a solo traveler and we invited him to go out with us. We never expected to see him again when we said our goodbyes, but we saw each other again about a week later at a different island. It was " +
+          "such a unexpected surprise. Neither one of us knew that we all had planned to visit that island. ",
+        recommendations: "The advice I would give would be to make sure to have to rest time schedule in you itinerary. It is always a rookie mistake! You want to see everything and do everything, but you will tire yourself out " +
+          "so quickly if you do that. It is necessary to have days or hours to simply relax and not always be on the go. Most times hanging out at your hostel/hotel/airbnb would beneficial in the long run for your travels. " +
+          "During my trip to Thailand with my friends, one of them had made an itinerary for the whole trip and planned the activities we would do for each day. She did not think to consider the weather. I was thankful that we " +
+          "got a couple rainy days because that's when we got to rest! Also, make sure to be flexible with your schedule. Usually when the unexpected happens it when you create the best memories! Oh and I would also recommended " +
+          "to pack as little as they can and then remove some because it won't all fit on their backpack! ",
+        img1: "sabrinaMastelloto/filla.jpg",
+        img2: "sabrinaMastelloto/img2.jpg",
+        img3: "sabrinaMastelloto/download.jpg",
+        img4: "sabrinaMastelloto/fill.jpg",
+        img5: "sabrinaMastelloto/img1.jpg",
+        img6: "sabrinaMastelloto/img3.jpg",
+        firstQuote: "It is necessary to have days or hours to simply relax and not always be on the go. ",
       },
     ];
   }
